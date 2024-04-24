@@ -1,78 +1,9 @@
- {% load static %}
-
-<html>
-
-<head>
-
-    <title> Simply </title>
-
-    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+{% extends 'base.html' %}
+ 
 
 
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=eXyTWHX-iSTMNS2ZleIpJcG3oYucMq0XaeGJ8EV2WUtv6Q289ovb9X8E6QIR_VY3Bs4SVcGDprZYgaIyiHIcaMjjPBGmtJTQ9161QkZ5tFapWZG8rENbZEb7YY8gddKUFpInku6_LD1aeREZbuiPBvjeV62GUAPYeQ3W0A6hueipOqD1xYhThYzSGPuOV1Hn_5rTQiehjPpkSOeicRfiZWoDZKnb3uIN76kNmReIPSsO8dhgRrE2iD6XYeI9dl7Vbwk7MYSmEjF3jSXxgnnTPS6pF0iEQhrq97jtJp5eB63xL0pCkM6sBrrRB7GtTz9mRw09CKzMeq5Q9DM2A9pIrJe-k2MuWonhgdxvlbwoE0NhPlLXYJqP-eRemVb_dimCgS_Nycwqtz66F3NVYE55n7n6UsJntwQj3IVhdwzRo_sJrwXht_iWBW-9tvbabPJHJl5PALS3e5VkRQxQhjjDIU2mhZxQf0cf71mycAI5wu1j7fBcgc4GmPZa7EKq_iPpLbjd3g2w0cJbmXCH0NtrRFHH3wKmgxPg-ZhgxHvLuTXgAje1YqiQirserlGT3ib0MV-S5IRJXWLbA5fsVy0EfG7Z-Mxx5pIcQXC7SCouPMgLItS67SUg6ONJ4HREWs3rtOMnZLKmZAECx6eXA2FyHcLX74KRzNdgJI0trBBlkcFrkFQhZtKss0S4amBJ9mUQtwf4xD6S_eqFiEqaEYsBmTeirFG9rvjjua4xFvsIw-K37rX2Au-I8o9esfXHZGarWL62dBDE_C7rA5JNER4XrQ"
-        charset="UTF-8"></script>
-    <link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAyMy0wNi0wNV8yMi0wNy00Mi1mMjBmZjIyMjBkYzZmZDAwMjhlMmNlOWEzOGMzNTFiZS9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkaW5kZXguaHRtbCZFeHBpcmVzPTE3MTMwNzA0ODYmU2lnbmF0dXJlPWp0cEdkZjhGZ0lsT0dNbFVJaHA5T3dXbWZUU0NJZGpmU0VDUnFHQWdmSmZPNlVQZ0NWNElFNHZSMlB-Q3pZcVBKVkJWRE0waHlQanpuYzREfldTLUJ0TU92dFc4QkhmbjRZNDV-RjNmekhYfn5yZmFFMXNXYnFEekxqY2V6Rkd1LVRxZzR4V1YyLTNNaEFUTH5mM2F6VDZTVzczdTRtVkVFRGcwN09ENER0TXJtY2c4cm55ejZBVVNMa0JSQ3VsV1VSZG42RTF6OHFOUElWTmY2cHhRaXAwOGdsLVB3RHFWNUQ1a3RFcE9nTTNubXJJSUdkVHc4bXNILWxzbGRlSH5CS2NZeEY1SlF6LW1NfmJRVjdOVUVZOHh0ZFN6c3JoWFRicFpFSnNYVEdvb240LVl-azRUYWtZdUk4aUlKZUNoenBVbDREd3B4NjhFeGlPM0gwaEoyQV9fJktleS1QYWlyLUlkPUszTUcxNDhLOVJJUkY0"
-    />
-</head>
+{% block content %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-
-    <a class="navbar-brand main-heading"> 
-                
-          &nbsp; Simply
-        
-        </a>
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-    
-        </button>
-
-
-    <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-
-
-        <ul class="navbar-nav ms-auto">
-
-
-            &nbsp; &nbsp; &nbsp;
-
-
-            <li class="nav-item">
-
-                <a class="btn btn-primary navbar-btn" type="button" href="{% url 'register' %}">Register</a>
-
-            </li>
-
-
-            &nbsp; &nbsp; &nbsp;
-
-
-            <li class="nav-item">
-
-                <a class="btn btn-primary navbar-btn" type="button" href="{% url 'my-login' %}">Login</a>
-
-            </li>
-
-
-            &nbsp; &nbsp; &nbsp;
-
-
-        </ul>
-
-
-    </div>
-
-
-</nav>
-
-<br>
-
-
-<body>
 
     <br>
     <br>
@@ -89,20 +20,4 @@
 
     </div>
 
-
-</body>
-
-
-
-
-<script src="{% static '' %}"></script>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
-
-
-</html>
+{% endblock%}

@@ -144,14 +144,13 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGES_BUCKET_NAME
 #Admin styling adjustement
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "demo-ufgcloud",
-        "USER": "demoufg",
-        "PASSWORD": "LiewoLiewo",
-        "HOST": "database-1.cfyiesmeszz5.us-east-1.rds.amazonaws.com",
-        "PORT": "5432",
-    }
-    }
-}
+#DATABASES = {
+#   "default": {
+#        "ENGINE": "django.db.backends.postgresql",
+#        "NAME": "demo-ufgcloud",
+#        "USER": "demoufg",
+#        "PASSWORD": "LiewoLiewo",
+#        "HOST": "database-1.cfyiesmeszz5.us-east-1.rds.amazonaws.com",
+#        "PORT": "5432",
+#   }
+#   }
